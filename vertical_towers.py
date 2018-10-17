@@ -338,7 +338,8 @@ class GrowTower:
 
 def base(gt):
     tower = gt.make_raw_tower()
-    return gt.make_em_stack(tower)
+    tower =  gt.make_em_stack(tower)
+    return gt.notch_it(tower)
 
 def tower(n, dual=False):
     gt = GrowTower(dual=dual)
